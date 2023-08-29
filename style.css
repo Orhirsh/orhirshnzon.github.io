@@ -1,0 +1,99 @@
+@font-face {
+    font-family: logo;
+    src: url(fonts/JoaneDeco-Regular.ttf);
+}
+
+@font-face {
+    font-family: NAV;
+    src: url(fonts/Joane-Light.ttf);
+}
+
+html {}
+
+body {
+    margin: 0;
+    background-color: #F0FFF4;
+}
+
+header {
+    background-color: #7195B0;
+    padding: 1rem 2rem;
+    /* Adjust padding as needed */
+    overflow: auto;
+    /* Clear floats */
+}
+
+.navbar {
+    float: right;
+    /* Float the navbar to the right */
+    margin-top: 1.5rem;
+    /* Adjust margin as needed for spacing */
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar-list li {
+    margin: 0;
+    padding: 0 1rem;
+    /* Adjust padding as needed */
+    font-size: 1.2rem;
+    font-family: NAV;
+    display: inline-block;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    margin: 15px 85px;
+    height: 95px;
+    width: 8rem;
+
+}
+
+h1 {
+    align-items: center;
+    font-family: "logo";
+    font-weight: 100;
+    font-size: 3rem;
+    letter-spacing: 25px;
+    color: #F0FFF4;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+}
+
+.profile {
+    display: block;
+    margin: 55px auto;
+    width: 280px;
+    //border: 10px solid rgba(134, 179, 97, 0.8);
+    border-radius: 50%;
+}
+
+
+.aboutp {
+    margin: auto;
+    width: 55%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #7195B0;
+    line-height: 3rem;
+    height: 15rem;
+
+}
+
+.aboutp::first-letter {
+    -webkit-initial-letter: 4 1;
+    initial-letter: 2 1;
+    font-family: logo;
+}
