@@ -129,11 +129,13 @@ main {
     height: 20rem;
     padding-bottom: 55px;
     overflow: auto;
+
+
 }
 
 .aboutp::first-letter {
     -webkit-initial-letter: 4 1;
-    initial-letter: 2 1;
+    initial-letter: 1.7 1;
     font-family: logo;
 }
 
@@ -211,7 +213,7 @@ article p {
 
 .intro-sound::first-letter {
     -webkit-initial-letter: 4 1;
-    initial-letter: 2 1;
+    initial-letter: 1.6 1;
     font-family: logo;
 }
 
@@ -266,7 +268,68 @@ iframe {
     color: #A55A7E
 }
 
+.project-container #webgl_iframe {
+    display: flex;
+    flex-flow: column wrap;
+    height: 300px;
+    width: 100%;
+}
+
+#webgl_iframe {
+    margin: auto;
+    background-color: #7195B0;
+}
+
+/*folded-menu*/
+.folded-menu {
+    position: absolute;
+    z-index: 99;
+    background-color: #7195B0;
+    height: 350px;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    display: none;
+    animation-name: fade;
+    animation-duration: 0.5s;
+    /* Adjust the duration as needed */
+}
+
+.navbar-list-folded li {
+    margin: 0;
+    padding: 0 1rem;
+    /* Adjust padding as needed */
+    font-size: 1.2rem;
+    font-family: NAV;
+    padding: 15px;
+
+}
+
+.navbar-list-folded li a {
+    color: #F0FFF4;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        /* Start with opacity 0 (invisible) */
+    }
+
+    to {
+        opacity: 1;
+        /* End with opacity 1 (fully visible) */
+    }
+}
+
 /*media queries*/
+@media only screen and (min-width: 1200) {
+    .folded-menu {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 1300px) {
     .navbar {
@@ -276,6 +339,7 @@ iframe {
     .hem-menu {
         display: inline;
     }
+
 
     h1 {
         padding-left: 10%;
