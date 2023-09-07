@@ -8,11 +8,13 @@
     src: url(fonts/Joane-Light.ttf);
 }
 
-html {}
+html {
+    margin: 0;
+}
 
 body {
     margin: 0;
-    background-color: #F0FFF4;
+    background-color: #f8faf6;
 }
 
 .header {
@@ -27,6 +29,7 @@ body {
 }
 
 .navbar {
+    position: relative;
     float: right;
 }
 
@@ -60,7 +63,7 @@ body {
 }
 
 .hem-menu {
-
+    position: relative;
     display: none;
     width: 6rem;
     height: 60px;
@@ -68,6 +71,8 @@ body {
 
 
 }
+
+
 
 h1 {
 
@@ -80,10 +85,25 @@ h1 {
     padding-left: 20%;
 
 
+
+}
+
+h2 {
+    color: #7195B0;
+    margin: 3rem;
+    text-align: center;
+    font-family: logo;
+    font-size: 1.1rem;
+    line-height: 1rem;
+    font-weight: 600;
+    letter-spacing: 20px;
+    background-color: bisque;
+    padding: 10px;
 }
 
 main {
     width: 100%;
+    height: 90%;
 }
 
 .profile {
@@ -99,6 +119,7 @@ main {
 
 
 .aboutp {
+
     margin: auto;
     width: 55%;
     text-align: center;
@@ -106,7 +127,8 @@ main {
     color: #7195B0;
     line-height: 3rem;
     height: 20rem;
-
+    padding-bottom: 55px;
+    overflow: auto;
 }
 
 .aboutp::first-letter {
@@ -115,18 +137,26 @@ main {
     font-family: logo;
 }
 
+div a .work-link {
+    font-family: NAV;
+    color: #cccccc;
+    background-color: #cccccc;
+}
+
 /*Footer style*/
 footer {
-    position: fixed;
-    bottom: 0;
+    display: flex;
+    justify-content: center;
     background-color: #7195B0;
-    width: 100%;
+    min-width: 100%;
     max-height: 6rem;
 
 }
 
+
 .flex-container {
     display: flex;
+    width: 100%;
     justify-content: center;
 }
 
@@ -141,27 +171,37 @@ footer {
 }
 
 .copy-text {
-    text-justify: center;
+    text-align: center;
     padding-left: 10px;
     padding-bottom: 10px;
     font-size: 1rem;
-    color: #F0FFF4;
+    color: #f8faf6;
+
 
 }
 
 
 /*sound page css*/
+article {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+
+
+}
 
 article p {
     margin: auto;
-    position: relative;
-    top: 85px;
+
+
+
 }
 
 .intro-sound {
     text-align: center;
     margin-top: 35px;
     width: 55%;
+    height: 90%;
     font-size: 1.5rem;
     color: #7195B0;
     line-height: 3rem;
@@ -176,28 +216,29 @@ article p {
 }
 
 .work-container {
-    height: 850px;
-    width: 75%;
+    height: 450px;
+    width: 80%;
     margin: 0 auto;
-
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .project-container {
-    display: flex;
+
     margin: 5px;
-    height: 380px;
+    max-height: 380px;
     align-items: center;
     width: 240px;
     border-radius: 5%;
-    background-color: hsla(136, 51%, 85%, 0.523);
+    background-color: #7195B0;
 }
 
 .project-thumb {
     margin: auto;
+    display: flex;
+    align-items: flex-start;
     margin-top: 10px;
     height: 55%;
     width: 85%;
@@ -205,19 +246,24 @@ article p {
 
 }
 
+iframe {
+    height: 33%;
+}
+
+
+
 .navbar-list li a:hover {
     color: #B08C71;
 }
 
-.hem-menu:hover {
-    fill: #B08C71;
-}
+
 
 
 
 .navbar-list li a:active {
     font-size: 1.1rem;
-    color: grey
+    padding: 0 0.15rem;
+    color: #A55A7E
 }
 
 /*media queries*/
@@ -237,6 +283,21 @@ article p {
 
 }
 
+@media only screen and (max-width: 950px) {
+    .work-container {
+        flex-flow: column nowrap;
+    }
+
+    .project-container {
+        overflow: auto;
+    }
+
+    .intro-sound {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+}
+
 @media only screen and (max-width: 850px) {
     h1 {
         font-size: 2.2rem;
@@ -253,6 +314,8 @@ article p {
         padding-left: 0;
     }
 
+
+
 }
 
 @media only screen and (max-width: 560px) {
@@ -262,7 +325,14 @@ article p {
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and(max-width:480px) {
+    h1 {
+        color: #A55A7E;
     }
 
 }
