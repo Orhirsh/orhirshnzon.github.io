@@ -11,7 +11,8 @@ hemBtn.addEventListener('click', function () {
         isMenuVisible = true; // Update menu visibility state
     } else {
         foldedMenu.style.animationDirection = 'reverse';
-        foldedMenu.style.animationFillMode = 'forwards'; // Keep the final state after animation
+        foldedMenu.style.display = 'none'
+
         isMenuVisible = false; // Update menu visibility state
     }
 });

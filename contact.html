@@ -22,7 +22,7 @@
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="sound.html">SOUND</a></li>
                     <li><a href="software.html">SOFTWARE</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="software.html">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,29 +31,35 @@
     <div class="folded-menu">
         <nav class="navbar-folded">
             <ul class="navbar-list-folded">
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="index.html">ABOUT</a></li>
                 <li><a href="sound.html">SOUND</a></li>
                 <li><a href="software.html">SOFTWARE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </div>
     <section class="main">
-        <div>
-            <img src="images/profile.jpeg" alt="" class="profile">
+        <div class="contact-phrase">
+            <p class="contact">Got an exciting project? Lets talk!</p>
         </div>
-        <div>
-            <p class="aboutp">
-                Or is a Software Engineer and Sound Designer based in Seattle,
-                originally from
-                Israel. With a foundation in Software Engineering and a passion for Sound Design, OR brings a unique
-                blend
-                of technical expertise and creative flair to every project. Their journey from Israel to Seattle has
-                shaped
-                a versatile skill set and a drive for excellence in both fields.
-            </p>
+        <div class="form">
+            <form action="">
+                <div class="form-container">
+                    <label for="name"></label>
+                    <input id="name" type="text" name="name" placeholder="Name">
+                    <label for="email"></label>
+                    <input id="email" type="email" name="name" placeholder="email"><br>
+                    <div class="description">
+                        <label for="desc">Tell me about your project</label><br>
+                        <textarea name="desc" id="desc" cols="30" rows="10"></textarea><br>
+                        <button class="form-button">Send</button>
+                    </div>
+
+
+                </div>
+            </form>
         </div>
     </section>
-
     <footer>
         <div class="footer-content">
             <div class="container">
