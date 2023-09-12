@@ -191,11 +191,18 @@ input::placeholder {
 }
 
 .profile {
+    height: 280px;
+
     display: block;
+    background-image: url(images/profile.jpeg);
     margin: 55px auto;
     width: 280px;
     margin-bottom: 0.5rem;
     border-radius: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 
@@ -232,6 +239,7 @@ div a .work-link {
 /*Footer style*/
 footer {
     display: flex;
+    align-items: flex-end;
     justify-content: center;
     background-color: #7195B0;
     min-width: 100%;
@@ -242,7 +250,6 @@ footer {
 
 .flex-container {
     display: flex;
-
     width: 100%;
     justify-content: center;
 }
@@ -335,7 +342,7 @@ article p {
 }
 
 iframe {
-    height: 33%;
+    height: 40%;
 }
 
 
@@ -455,6 +462,10 @@ iframe {
 @media only screen and (max-width: 850px) {
     h1 {
         font-size: 2.2rem;
+    }
+
+    iframe {
+        height: 80%;
     }
 
 }
