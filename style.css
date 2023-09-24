@@ -503,6 +503,22 @@ iframe {
         font-size: 1.2rem;
     }
 
+    .intro {
+        padding-top: 15px;
+
+    }
+
+    .aboutp {
+        padding-top: 15px;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .profile {
+        height: 13rem;
+        width: 40%;
+    }
+
     .work-container {
         height: 300%;
     }
